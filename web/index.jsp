@@ -4,10 +4,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Simple Salary Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
         <h1>Simple Salary Calculator</h1>
-        
+        <hr/>
         <form name="infoForm" action="results.jsp" method="post">
             <table>
                 <tbody>

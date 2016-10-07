@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Salary Info</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     
     <%
@@ -40,6 +41,7 @@
         if (grossPay < 500){
             taxAmount = taxablePay * 0.18;
         }
+        
         else {
             taxAmount = taxablePay * 0.22;
         }
@@ -50,8 +52,8 @@
         
     <body>
         <h1>Salary Info</h1>
-        
-        <table border="1">
+        <hr/>
+        <table id="table2" border="1">
             <tbody>
                 <tr>
                     <td>Total Hours Worked:</td>
@@ -90,7 +92,7 @@
                 
                 <tr>
                     <td>Tax Amount:</td>
-                    <td<%= taxAmount %>></td>
+                    <td><%= taxAmount %></td>
                 </tr>
                 
                 <tr>
